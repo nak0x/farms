@@ -1,25 +1,28 @@
 <?php
 
-class Renderer{
-  
-  static function renderIntro(){
+class Renderer
+{
 
+  static function renderIntro()
+  {
   }
 
-  static function renderOutro(){
-
+  static function renderOutro()
+  {
   }
 
-  public function render(array &$entitys){
+  public function render(array &$entitys)
+  {
     $entitys["farms"][] = new Farm;
   }
 
-  public function getCurrentViewAction(): array{
+  public function getCurrentViewAction(): array
+  {
     return [];
   }
 
-  static function getCurrentView(): View{
+  static function getCurrentView(): View
+  {
     return new View;
   }
-
 }
